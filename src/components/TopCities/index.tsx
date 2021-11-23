@@ -37,7 +37,7 @@ export default function TopCities() {
       }
     }, 3000);
   }, []);
-  
+
   useEffect(() => {
     async function loadCities() {
       try {
@@ -67,12 +67,14 @@ export default function TopCities() {
   return (
     <>
       <h1>Veja as Cidades mais pesquisadas:</h1>
+      {!!topCity ?
         <TopCity key={TopCity.id}>
           <span>{topCity.name} - {topCity.country}</span>
           <span>Temperatura atual: {Number(topCity.temp - 273.15).toFixed(2)} ºC</span>
           <span>Umidade: {topCity.humidity}%</span>
           <span>Tempo: {topCity.weather}</span>
-        </TopCity>
+        </TopCity> : null
+      }
       {cities.map((city) => (
         <CityContainer key={city.id}>
           <span>{city.name} - {city.country}</span>
