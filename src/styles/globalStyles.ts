@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   *:focus {
     outline: 0;
   }
-  
+
   html body #root {
     height: 100% !important;
   }
@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #root {
-    background-color: #AED9E0;
+    background-color: #f0f2f5;
 
   }
 `;

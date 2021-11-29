@@ -1,6 +1,6 @@
-//import { Container } from "./AppStyles";
 import GlobalStyle from "./styles/globalStyles";
 import SearchCity from "./components/SearchCity";
+import Header from "./components/Header";
 import TopCities from "./components/TopCities";
 import { ToastContainer } from "react-toastify";
 import { Row, Col, Container } from "react-bootstrap";
@@ -8,6 +8,7 @@ import { Row, Col, Container } from "react-bootstrap";
 function App() {
   return (
     <>
+    <Header/>
     <Container>
       <ToastContainer/>
       <GlobalStyle />

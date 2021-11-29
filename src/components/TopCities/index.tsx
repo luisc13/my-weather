@@ -66,7 +66,6 @@ export default function TopCities() {
 
   return (
     <>
-      <h1>Veja as Cidades mais pesquisadas:</h1>
       {!!topCity ?
         <TopCity key={TopCity.id}>
           <span>{topCity.name} - {topCity.country}</span>

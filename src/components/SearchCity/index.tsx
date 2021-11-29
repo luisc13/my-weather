@@ -3,7 +3,6 @@ import { Button, InputGroup, FormControl } from "react-bootstrap";
 import { useState } from "react";
 import {toast} from 'react-toastify'
 import api from "../../service/api";
-import Swal from "sweetalert2";
 
 type Data = {
   id: number;
@@ -46,7 +45,6 @@ export default function SearchCity() {
 
   return (
     <>
-      <h1>Veja o tempo em sua cidade:</h1>
       <WeatherContainer>
       {Object.keys(tempo).length > 0 && (
           <div>
